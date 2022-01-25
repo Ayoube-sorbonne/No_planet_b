@@ -57,9 +57,10 @@ void effectuer_consequences(Vaisseau* andromede, Personnage* perso, vector<int> 
 void Evenement::application_evenement(Evenement a, Vaisseau *andromede, Personnage *perso){
     cout <<endl<<"Evenement de la semaine:"<<endl;
     string s = a.getIntro();  
-    cout << s << endl;
+    cout << s << endl<<endl;
 
     //affichage des choix
+    cout<<"Choix:"<<endl;
     int taille = a.getChoix().size();
     for(int i=0; i< taille; i++){ 
         cout << i << " : " << a.m_choix[i].getLibelle() << " ("<< a.m_choix[i].getPourcen() << "% de reussite)"<<endl;

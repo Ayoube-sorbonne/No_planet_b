@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Personnage::Personnage() : m_sante(100), m_faim(100), m_nom("Leouwu")
+Personnage::Personnage() : m_sante(100), m_faim(100), m_nom("Adam")
 {
 }
 
@@ -10,7 +10,7 @@ Personnage::Personnage() : m_sante(100), m_faim(100), m_nom("Leouwu")
 std::string Personnage::toSTR() const
 {
     string s;
-    s += "Nome : " + m_nom + ", ";
+    s += "Nom : " + m_nom + ", ";
     s += "Sante : " + to_string(m_sante) + ", ";
     s += "Faim : " + to_string(m_faim) + ", ";
 
